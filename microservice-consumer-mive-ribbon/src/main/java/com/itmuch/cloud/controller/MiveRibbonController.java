@@ -27,7 +27,7 @@ import com.itmuch.utils.json.JsonUtil;
  * @date  2019年8月6日 下午3:27:45
  */
 @RestController
-public class UserController {
+public class MiveRibbonController {
 
 	@Resource
 	private MicroRestTemplate microRestTemplate;
@@ -36,6 +36,8 @@ public class UserController {
 	public String findById(@PathVariable Integer id) {
 		User user = new User();
 		user.setId(id);
+		user = this.microRestTemplate.postForObject("MICROSERVICE-PROVIDER-USER", "simple", user, User.class);
+		System.err.println("获取到用户名:"+user.getName());
 		return this.microRestTemplate.postString("MICROSERVICE-PROVIDER-USER","eureka-instance", JsonUtil.toJson(user));
 	}
 }

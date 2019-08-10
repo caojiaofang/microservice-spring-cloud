@@ -13,6 +13,8 @@
 
 	<modules>
 		<module>microservice-consumer-mive</module>
+		<module>microservice-consumer-mive-ribbon</module>
+		<module>microservice-consumer-mive-feign</module>
 		<module>microservice-provider-user</module>
 		<module>microservice-provider-eureka</module>
 		<module>microservice-utils</module>

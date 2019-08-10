@@ -20,6 +20,6 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface UserDao{
+public interface MiveDao{
 
 }
