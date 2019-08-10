@@ -1,0 +1,25 @@
+server:
+  port: 7092
+  
+spring:
+  application:
+    name: microservice-consumer-mive-ribbon
+  main:
+    allow-bean-definition-overriding: true
+    
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}:${spring.application.name}
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+      
+      
+logging:
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+    org.hibernate.type.descriptor.sql.BasicExtractor: trace
+    com.itmuch.cloud: debug
