@@ -18,6 +18,7 @@
 		<module>microservice-consumer-mive-feign-customizing</module>
 		<module>microservice-provider-user</module>
 		<module>microservice-provider-eureka</module>
+		<module>microservice-provider-eureka-ha</module>
 		<module>microservice-utils</module>
 	</modules>
 
