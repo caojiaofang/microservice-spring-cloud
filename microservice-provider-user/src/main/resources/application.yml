@@ -16,7 +16,7 @@ spring:
   main:
     allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
     
-    
+# 健康检查配置
 management:
   endpoint:
     health:
