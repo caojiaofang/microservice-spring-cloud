@@ -10,7 +10,7 @@
 	</parent>
 	
 	
-	<artifactId>microservice-provider-eureka</artifactId>
+	<artifactId>microservice-discovery-eureka</artifactId>
 	<packaging>jar</packaging>
 	
 	<dependencies>
